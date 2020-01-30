@@ -12,13 +12,11 @@ body{
         font-family: "Montserrat", "Roboto" ,"Kaushan Script", "sans-serif", "cursive";
         color: #999999;
         font-size: 18px;
-        width: 1202px;
+        margin: 0 auto;
 }
 
 .wrapper{
     width: 1202px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -31,7 +29,7 @@ img{
 .navigation{
     display: flex;
     justify-content: space-between;
-    height: 23px;
+    max-height: 23px;
 }
 
 
@@ -40,10 +38,6 @@ img{
     width: 87px;
     height: 23px;
 }
-/*.menu{
-    width: 490px;
-    height: 14px;
-}*/
 
 .list{
     display: flex;
@@ -76,6 +70,16 @@ img{
     height: 3px;
     background-color: #f38181;
     margin-top: 12px;
+    position: absolute;
+}
+
+.inline-block-decorated{
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 12px;
 }
 
 
@@ -94,6 +98,7 @@ h2{
     color: #333333;
     text-align: center;
     margin-top: 130px;
+    width: 1202px;
 }
 h3{
     font-family: "Monserrat", sans-serif;
@@ -102,6 +107,7 @@ h3{
     text-transform: uppercase;
     color: #333333;
     text-align: center;
+    width: 1202px;
 }
 
 h3::after{
@@ -109,7 +115,7 @@ h3::after{
     content: "";
     width: 60px;
     height: 3px;
-    background-color: #f38181;  
+    background-color: #f38181;
     margin-left: 572px;
     margin-top: 42px;
 }
@@ -135,8 +141,6 @@ h3::after{
     margin-top: 100px;
 }
 
-
-
 .name-servis{
     width: 260px;
     font-family: "Monserrat", sans-serif;
@@ -144,6 +148,7 @@ h3::after{
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-left: 28px;
+    color: #333333;
 }
 
 .servise{
@@ -282,6 +287,15 @@ h3::after{
 .card:hover{
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+footer{
+    max-height: 64px;
+    width: ;: 1202px;
+    margin-top: 84px;
+    position: relative;
 }
 
 footer::before{
@@ -291,18 +305,13 @@ footer::before{
     height: 1px;
     background-color: #e5e5e5;
     margin-bottom: 10px;
-}
-
-footer{
-    height: 64px;
-    width: ;: 1202px;
-    margin-top: 84px;
+    position: absolute;
 }
 
 .basement{
     display: flex;
     justify-content: space-between;
-    height: 54px;
+    max-height: 54px;
     flex-basis: 1202px;
 }
 
@@ -342,3 +351,14 @@ button{
     text-transform: uppercase;
     border: 0;
 }
+/*
+hr {
+    width: 1px;
+    height: 1202px;
+    margin: 0px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }*/
