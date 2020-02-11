@@ -45,16 +45,15 @@ img{
     align-items: center;
     list-style: none;
     font-family: "Monserrat", sans-serif;
-    min-width: 490px;
     margin: 0px;
 }
 
 .list-item{
-    padding-right: 56px;
+    margin-right: 56px;
 }
 
 .list-item:nth-last-child(1){
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .list-item a:hover{
@@ -65,14 +64,31 @@ img{
     color: #f38181; 
 }
 
-.list-item a:hover::after{
+.list-item a{
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: normal;
+    color: #95e1d3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.list-item a::after{
     display: block;
     content: "";
-    width: 50px;
+    width: 0;
     height: 3px;
     background-color: #f38181;
     margin-top: 12px;
     position: absolute;
+    left: 0;
+    width: 0;
+    transition: width 0.3s ease-out
+}
+
+.list-item a:hover:after{
+    width: 100%;
 }
 
 .inline-block-decorated{
@@ -85,14 +101,6 @@ img{
 }
 
 
-.list-item a{
-    text-decoration: none;
-    font-size: 14px;
-    line-height: normal;
-    color: #95e1d3;
-    text-transform: uppercase;
-}
-
 h2{
     font-family: "Kaushan Sckript", cursive;
     font-style: italic;
@@ -102,6 +110,7 @@ h2{
     margin-top: 130px;
 }
 h3{
+    position: relative;
     font-family: "Monserrat", sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -111,13 +120,14 @@ h3{
 }
 
 h3::after{
+    position: absolute;
+    left: 571px;
+    bottom: -42px;
     display: block;
     content: "";
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin-left: 572px;
-    margin-top: 42px;
 }
 
 .servises{
@@ -126,7 +136,8 @@ h3::after{
     justify-content: space-between;
     list-style: none;
     overflow: hidden;
-    margin-top: 66px;
+    margin-top: 110px;
+    padding: 0;
 }
 
 .list-servises{
@@ -159,27 +170,27 @@ h3::after{
 }
 
 .list-servises-photography::before{
-    content: url(img/icons/1.jpg);
+    content: url(/img/icons/1.jpg);
 }
 
 .list-servises-design::before{
-    content: url(img/icons/2.jpg);
+    content: url(/img/icons/2.jpg);
 }
 
 .list-servises-creativity::before{
-    content: url(img/icons/3.jpg);
+    content: url(/img/icons/3.jpg);
 }
 
 .list-servises-seo::before{
-    content: url(img/icons/4.jpg);
+    content: url(/img/icons/4.jpg);
 }
 
 .list-servises-css::before{
-    content: url(img/icons/5.jpg);
+    content: url(/img/icons/5.jpg);
 }
 
 .list-servises-digital::before{
-    content: url(img/icons/6.jpg);
+    content: url(/img/icons/6.jpg);
 }
 
 .about-team{
@@ -188,7 +199,7 @@ h3::after{
     font-size: 15px;
     text-align: center;
     margin-bottom: 96px;
-    margin-top: 16px;
+    margin-top: 92px;
     text-overflow: ellipsis;
 }
 
@@ -196,11 +207,10 @@ h3::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .card-team{
-    width: 380px;
-    height: 542px;
     text-align: center;
 }
 
@@ -304,14 +314,14 @@ footer::before{
     width: 1202px;
     height: 1px;
     background-color: #e5e5e5;
-    margin-bottom: 10px;
 }
 
 .basement{
     display: flex;
     justify-content: space-between;
-    max-height: 54px;
     flex-basis: 1202px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .signature{
