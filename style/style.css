@@ -102,14 +102,17 @@ img{
 
 
 h2{
+    margin: 0px;
     font-family: "Kaushan Sckript", cursive;
     font-style: italic;
     font-size: 24px;
     color: #333333;
     text-align: center;
-    margin-top: 130px;
+    padding-top: 130px;
+    margin-bottom: 30px;
 }
 h3{
+    margin: 0px;
     position: relative;
     font-family: "Monserrat", sans-serif;
     font-weight: 600;
@@ -128,6 +131,7 @@ h3::after{
     width: 60px;
     height: 3px;
     background-color: #f38181;
+    /* margin-bottom: 110px; */
 }
 
 .servises{
@@ -136,8 +140,9 @@ h3::after{
     justify-content: space-between;
     list-style: none;
     overflow: hidden;
-    margin-top: 110px;
     padding: 0;
+    margin: 0px;
+    padding-top: 110px;
 }
 
 .list-servises{
@@ -198,8 +203,9 @@ h3::after{
     font-family: Roboto, sans-serif;
     font-size: 15px;
     text-align: center;
+    margin: 0px;
     margin-bottom: 96px;
-    margin-top: 92px;
+    padding-top: 92px;
     text-overflow: ellipsis;
 }
 
@@ -208,6 +214,7 @@ h3::after{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 84px;
 }
 
 .card-team{
@@ -219,7 +226,7 @@ h3::after{
     font-size: 14px;
     text-transform: uppercase;
     color: #333333;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .profession{
@@ -227,7 +234,7 @@ h3::after{
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
-    margin-top: 16px;
+    padding-top: 16px;
 }
 
 .card{
@@ -304,23 +311,29 @@ h3::after{
 footer{
     max-height: 64px;
     width: ;: 1202px;
-    margin-top: 84px;
+    /* padding-top: 84px; */
     position: relative;
 }
 
 footer::before{
     display: block;
+    border-top: 2px solid #e5e5e5;
     content: "";
     width: 1202px;
-    height: 1px;
+    margin: auto;
+    /* display: block;
+    content: "";
+    width: 1202px;
+    height: 1px; 
     background-color: #e5e5e5;
+    height: 1px; */
 }
 
 .basement{
     display: flex;
     justify-content: space-between;
     flex-basis: 1202px;
-    margin-top: 12px;
+    padding-top: 12px;
     margin-bottom: 12px;
 }
 
