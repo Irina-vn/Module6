@@ -175,27 +175,27 @@ h3::after{
 }
 
 .list-servises-photography::before{
-    content: url(/img/icons/1.jpg);
+    content: url(../img/icons/1.jpg);
 }
 
 .list-servises-design::before{
-    content: url(/img/icons/2.jpg);
+    content: url(../img/icons/2.jpg);
 }
 
 .list-servises-creativity::before{
-    content: url(/img/icons/3.jpg);
+    content: url(../img/icons/3.jpg);
 }
 
 .list-servises-seo::before{
-    content: url(/img/icons/4.jpg);
+    content: url(../img/icons/4.jpg);
 }
 
 .list-servises-css::before{
-    content: url(/img/icons/5.jpg);
+    content: url(../img/icons/5.jpg);
 }
 
 .list-servises-digital::before{
-    content: url(/img/icons/6.jpg);
+    content: url(../img/icons/6.jpg);
 }
 
 .about-team{
@@ -244,9 +244,15 @@ h3::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 }
 
-
+.card:hover{
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    
+}
 
 .card-image{
     position: absolute;
@@ -301,12 +307,7 @@ h3::after{
     opacity: 0.9;
 }
 
-.card:hover{
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
-    transition-duration: 2s;
-    transition-timing-function: linear;
-}
+
 
 footer{
     max-height: 64px;
